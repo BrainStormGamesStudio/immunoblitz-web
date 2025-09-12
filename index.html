@@ -30,9 +30,23 @@
         color: #333;
         padding: 20px;
       }
-      #unity-container {
-        margin: 30px auto;
-        display: inline-block;
+      /* --- Fix Unity overlapping issue --- */
+      #unity-container,
+      #unity-container.unity-desktop {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        display: block !important;
+        margin: 30px auto 0 !important;
+        width: 960px;
+      }
+      #unity-canvas {
+        width: 960px !important;
+        height: 600px !important;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
       }
       footer {
         margin-top: 40px;
