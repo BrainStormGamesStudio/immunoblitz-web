@@ -9,9 +9,17 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+    <nav style="text-align:center; margin:20px;">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+
     <div style="text-align: center; font-family: Arial, sans-serif; font-size: 20px; color: #333; padding: 30px 0; background-color: #f9f9f9; z-index: 10; position: relative;">
-    Welcome to <strong>ImmunoBlitz</strong> – a science-based game by Brainstorm Games. Learn about immunity while you play!
+      Welcome to <strong>ImmunoBlitz</strong> – a science-based game by Brainstorm Games. Learn about immunity while you play!
     </div>
+
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -20,13 +28,22 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
+      <div id="unity-warning"></div>
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">ImmunoBlitz</div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer style="text-align:center; padding:15px; background:#f5f5f5; font-family:Arial, sans-serif; font-size:14px; color:#666; margin-top:20px;">
+      © 2025 BrainStorm Games |
+      <a href="privacy.html" style="color:#0073e6; text-decoration:none;">Privacy Policy</a> |
+      <a href="about.html" style="color:#0073e6; text-decoration:none;">About</a> |
+      <a href="contact.html" style="color:#0073e6; text-decoration:none;">Contact</a>
+    </footer>
+
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
