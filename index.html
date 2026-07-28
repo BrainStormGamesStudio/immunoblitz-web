@@ -1,160 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="google-adsense-account" content="ca-pub-7937763552309554">
-    <meta name="robots" content="index, follow, all">
-    <link rel="canonical" href="https://www.brainstorm-games.com/">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>ImmunoBlitz by Brainstorm Games | Learn Immunology</title>
-    <meta name="description" content="ImmunoBlitz is a free, interactive educational game by Brainstorm Games. Learn about the human immune system, microbes, and natural defenses while playing.">
-    <meta name="keywords" content="ImmunoBlitz, Brainstorm Games, science game, immunity, educational game, play to learn, immune system, biology for kids, learning game">
-    <meta name="author" content="Brainstorm Games">
-    <meta property="og:title" content="ImmunoBlitz by Brainstorm Games">
-    <meta property="og:description" content="A fun science-based game where you learn about immunity and biology while you play.">
-    <meta property="og:url" content="https://www.brainstorm-games.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://www.brainstorm-games.com/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ImmunoBlitz by Brainstorm Games">
-    <meta name="twitter:description" content="A fun science-based game where you learn about immunity and biology while you play.">
-    <meta name="twitter:image" content="https://www.brainstorm-games.com/og-image.jpg">
-    
-    <!-- Google AdSense H5 Games Placement API -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7937763552309554" crossorigin="anonymous"></script>
-    <script>
-      window.adsbygoogle = window.adsbygoogle || [];
-      var adBreak = adConfig = function(o) {adsbygoogle.push(o);}
-    
-      // Configure ad settings
-      adConfig({
-        sound: 'on',
-        preloadAdBreaks: 'on'
-      });
-    </script>
-    
+    <title>Unity Web Player | ImmunoBlitz</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        background-color: #fafafa;
-      }
-      nav {
-        padding: 15px;
-        font-size: 18px;
-        background-color: #ffffff;
-        border-bottom: 1px solid #eaeaea;
-      }
-      nav a {
-        margin: 0 10px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-      }
-      nav a:hover {
-        text-decoration: underline;
-        color: #0056b3;
-      }
-      .welcome {
-        font-size: 20px;
-        color: #333;
-        padding: 20px;
-      }
-      /* --- Fix Unity overlapping issue --- */
-      #unity-container,
-      #unity-container.unity-desktop {
-        position: relative !important;
-        left: auto !important;
-        top: auto !important;
-        transform: none !important;
-        display: block !important;
-        margin: 30px auto 0 !important;
-        width: 960px;
-      }
-      #unity-canvas {
-        width: 960px !important;
-        height: 600px !important;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
-      }
-      footer {
-        margin-top: 40px;
-        padding: 20px;
-        font-size: 14px;
-        color: #555;
-        background-color: #ffffff;
-        border-top: 1px solid #eaeaea;
-      }
-      footer a {
-        margin: 0 8px;
-        color: #333;
-        text-decoration: none;
-      }
-      footer a:hover {
-        text-decoration: underline;
-      }
-      /* Content block under the game */
-      .content {
-        max-width: 960px;
-        margin: 40px auto;
-        padding: 20px 30px;
-        text-align: left;
-        color: #333;
-        line-height: 1.8;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
-      }
-      .content h1, .content h2 {
-        margin: 1em 0 .5em;
-        color: #2c3e50;
-      }
-      .content h3 {
-        color: #34495e;
-        margin-bottom: 0.2em;
-      }
-      .content ul {
-        padding-left: 1.5em;
-      }
-      .content li {
-        margin: .5em 0;
-      }
-    </style>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHF1C41RJF"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-KHF1C41RJF');
-    </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7937763552309554" crossorigin="anonymous"></script>
-
   </head>
   <body>
-
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="learn.html">Learn</a> |
-      <a href="about.html">About</a> |
-      <a href="privacy.html">Privacy Policy</a> |
-      <a href="contact.html">Contact</a> |
-      <a href="terms.html">Terms</a> |
-      <a href="disclaimer.html">Disclaimer</a>
-    </nav>
-
-    <div class="welcome">
-      Welcome to <strong>ImmunoBlitz</strong> – an interactive science game by BrainStorm Games. 
-      <br><span style="font-size: 16px; color: #666;">Learn the secrets of human immunology while defending the body!</span>
-    </div>
-
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -163,73 +16,22 @@
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-      <div id="unity-warning"></div>
+      <div id="unity-warning"> </div>
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">ImmunoBlitz</div>
       </div>
     </div>
-
-    <section id="game-info" class="content">
-      <h1>Play ImmunoBlitz – The Interactive Immune System Game</h1>
-      <p>
-        <strong>ImmunoBlitz</strong> is a free, browser-based educational game that turns the incredible complexity of the human immune system into a fast-paced, strategic defense challenge. Built by the educational developers at BrainStorm Games, this experience helps students, teachers, and curious players understand how physical barriers, cellular defenders, and vital organs work together to keep us healthy—all while having fun.
-      </p>
-
-      <h2>The Science Behind the Strategy</h2>
-      <p>
-        Every minute of every day, our bodies are under attack by invisible pathogens—viruses, bacteria, and fungi that want to multiply inside us. In ImmunoBlitz, you step into the role of the body's natural defense systems. You will need to manage resources, identify specific threats, and choose the right biological or medical response to survive the infection waves. It is not just about clicking fast; it is about understanding how biology fights back.
-      </p>
-
-      <h2>How to Defend the Body (Gameplay Guide)</h2>
-      <ul>
-        <li><strong>Analyze the Threat:</strong> Each wave introduces different microbes. Read the pre-wave brief carefully to pick the most effective biological counters.</li>
-        <li><strong>Take Action:</strong> Defend the body by popping yellow bubbles to damage microbes—representing the active attack of your white blood cells. Pop green bubbles to heal damaged organs.</li>
-        <li><strong>Manage Resources:</strong> Each successful defense grants you Immunopoints. Use these to upgrade your organs (e.g., strengthening the skin, fortifying the lungs) and deploy targeted immune responses.</li>
-        <li><strong>Avoid Toxins:</strong> Do not pop the red bubbles; these represent toxins and harmful elements that will have immediate negative effects on your health.</li>
-        <li><strong>Utilize Medical Interventions:</strong> Make strategic use of power-ups like vaccines, antiseptics, and antibiotics to help you survive overwhelming waves.</li>
-      </ul>
-
-      <h2>What You Will Learn</h2>
-      
-      <h3>1. The Body's First Line of Defense</h3>
-      <p>Before white blood cells even get involved, the body uses physical and chemical barriers to keep pathogens out. Through gameplay, you will learn how the skin acts as an impenetrable wall, how mucus and cilia trap foreign particles in our respiratory tract, and why stomach acid is crucial for neutralizing ingested bacteria.</p>
-
-      <h3>2. The Role of Cellular Defenders</h3>
-      <p>When pathogens breach the outer walls, the innate and adaptive immune systems take over. You will discover why different types of white blood cells matter—from the macrophages that "eat" invading germs, to the specialized lymphocytes (B-cells and T-cells) that remember specific viruses for the future.</p>
-
-      <h3>3. Real-World Medical Tools</h3>
-      <p>ImmunoBlitz bridges the gap between natural biology and modern medicine. The game demonstrates exactly how real-world interventions work in tandem with our bodies. You will see how masks reduce transmission rates, why antibiotics only work on bacteria (and not viruses), and how vaccines give your immune system a critical head start.</p>
-
-      <h2>Who Is This Game For?</h2>
-      <p>
-        ImmunoBlitz is heavily designed for classroom environments, homeschooling families, and anyone aged 8 and up who wants a friendly, approachable introduction to biology and anatomy. The game runs directly in your desktop browser with no downloads, installations, or complicated setups required.
-      </p>
-
-      <h2>About BrainStorm Games</h2>
-      <p>
-        BrainStorm Games creates small, highly focused educational experiences that make science approachable and entertaining. We believe that interactive "stealth learning" is the best way to internalize complex scientific concepts. 
-      </p>
-      <p>
-        If you would like to use ImmunoBlitz in your school's curriculum, want to suggest new features, or have feedback for our development team, we would love to hear from you. 
-        Learn more <a href="about.html">about our studio</a>, read our <a href="privacy.html">Privacy Policy</a>, or <a href="contact.html">contact us</a> directly at <a href="mailto:info@brainstorm-games.com">info@brainstorm-games.com</a>.
-      </p>
-    </section>
-
-    <footer>
-      © 2026 BrainStorm Games | 
-      <a href="learn.html">Learn</a> | 
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="about.html">About</a> | 
-      <a href="contact.html">Contact</a> |
-      <a href="terms.html">Terms</a> |
-      <a href="disclaimer.html">Disclaimer</a>
-    </footer>
-
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
+      // Shows a temporary message banner/ribbon for a few seconds, or
+      // a permanent error message on top of the canvas if type=='error'.
+      // If type=='warning', a yellow highlight color is used.
+      // Modify or remove this function to customize the visually presented
+      // way that non-critical warnings and error messages are presented to the
+      // user.
       function unityShowBanner(msg, type) {
         var warningBanner = document.querySelector("#unity-warning");
         function updateBannerVisibility() {
@@ -250,27 +52,58 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/immunoWebV5.loader.js";
+      var loaderUrl = buildUrl + "/immunoblitz-web.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/immunoWebV5.data",
-        frameworkUrl: buildUrl + "/immunoWebV5.framework.js",
-        codeUrl: buildUrl + "/immunoWebV5.wasm",
+        dataUrl: buildUrl + "/immunoblitz-web.data",
+        frameworkUrl: buildUrl + "/immunoblitz-web.framework.js",
+        codeUrl: buildUrl + "/immunoblitz-web.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Gabriel",
+        companyName: "BrainStorm Games",
         productName: "ImmunoBlitz",
-        productVersion: "1.05",
+        productVersion: "1.10",
         showBanner: unityShowBanner,
+        // errorHandler: function(err, url, line) {
+        //    alert("error " + err + " occurred at line " + line);
+        //    // Return 'true' if you handled this error and don't want Unity
+        //    // to process it further, 'false' otherwise.
+        //    return true;
+        // },
       };
 
+      // By default, Unity keeps WebGL canvas render target size matched with
+      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+      // Set this to false if you want to decouple this synchronization from
+      // happening inside the engine, and you would instead like to size up
+      // the canvas DOM size and WebGL render target sizes yourself.
+      // config.matchWebGLToCanvasSize = false;
+
+      // If you would like all file writes inside Unity Application.persistentDataPath
+      // directory to automatically persist so that the contents are remembered when
+      // the user revisits the site the next time, uncomment the following line:
+      // config.autoSyncPersistentDataPath = true;
+      // This autosyncing is currently not the default behavior to avoid regressing
+      // existing user projects that might rely on the earlier manual
+      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
+      // expected to change.
+
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         document.querySelector("#unity-container").className = "unity-mobile";
         canvas.className = "unity-mobile";
+
+        // To lower canvas resolution on mobile devices to gain some
+        // performance, uncomment the following line:
+        // config.devicePixelRatio = 1;
+
+
       } else {
+        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
@@ -287,11 +120,14 @@
                 document.querySelector("#unity-fullscreen-button").onclick = () => {
                   unityInstance.SetFullscreen(1);
                 };
+
               }).catch((message) => {
                 alert(message);
               });
             };
+
       document.body.appendChild(script);
+
     </script>
   </body>
 </html>
