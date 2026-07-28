@@ -58,6 +58,16 @@
         display: flex;
         justify-content: center;
         margin: 25px 0 35px 0;
+	width: 100%;
+      }
+	/* OVERRIDE UNITY ABSOLUTE POSITIONING */
+      #unity-container, 
+      #unity-container.unity-desktop {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
+        margin: 0 auto !important;
       }
       .content h2 {
         color: #2c3e50;
