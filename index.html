@@ -3,35 +3,261 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | ImmunoBlitz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImmunoBlitz | Interactive Science Strategy Game | BrainStorm Games</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+        color: #333;
+        line-height: 1.6;
+      }
+      nav {
+        text-align: center;
+        padding: 15px;
+        background-color: #ffffff;
+        font-size: 16px;
+        border-bottom: 1px solid #eaeaea;
+      }
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+        color: #0056b3;
+      }
+      .content {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 30px;
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
+      }
+      .content h1 {
+        color: #2c3e50;
+        text-align: center;
+        margin-bottom: 0.2em;
+      }
+      .subtitle {
+        text-align: center;
+        color: #666;
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 1.1em;
+      }
+      .game-section {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0 35px 0;
+      }
+      .content h2 {
+        color: #2c3e50;
+        margin-top: 1.8em;
+        border-bottom: 2px solid #f1f8ff;
+        padding-bottom: 10px;
+        font-size: 1.4em;
+      }
+      .content h3 {
+        color: #34495e;
+        margin-top: 1.2em;
+      }
+      .keypoints {
+        background-color: #f1f8ff;
+        padding: 20px 25px;
+        border-radius: 8px;
+        margin: 25px 0;
+      }
+      .keypoints h3 {
+        color: #2c3e50;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      .article-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .article-card {
+        border: 1px solid #eaeaea;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #fafafa;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .article-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .article-card h4 {
+        margin-top: 0;
+        color: #0056b3;
+      }
+      .article-card a {
+        text-decoration: none;
+        color: inherit;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        background-color: #ffffff;
+        margin-top: 40px;
+        border-top: 1px solid #eaeaea;
+      }
+      footer a {
+        margin: 0 8px;
+        text-decoration: none;
+        color: #333;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KHF1C41RJF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KHF1C41RJF');
+    </script>
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+    <!-- Top Navigation -->
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="learn.html">Learn</a> |
+      <a href="about.html">About</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="terms.html">Terms</a> |
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+
+    <div class="content">
+      <h1>ImmunoBlitz</h1>
+      <p class="subtitle">An Interactive Immunology & Public Health Strategy Game</p>
+
+      <!-- Unity Game Player Area -->
+      <div class="game-section">
+        <div id="unity-container" class="unity-desktop">
+          <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+          <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+              <div id="unity-progress-bar-full"></div>
+            </div>
+          </div>
+          <div id="unity-warning"> </div>
+          <div id="unity-footer">
+            <div id="unity-logo-title-footer"></div>
+            <div id="unity-fullscreen-button"></div>
+            <div id="unity-build-title">ImmunoBlitz</div>
+          </div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-logo-title-footer"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">ImmunoBlitz</div>
+
+      <!-- Comprehensive Educational Content -->
+      <h2>Command Your Immune Defenses</h2>
+      <p>
+        <strong>ImmunoBlitz</strong> is an arcade-style educational strategy game where players take charge of defending the human body against invading pathogens. From bacterial strains and viral outbreaks to persistent fungal infections, players must act swiftly to manage internal organ health, deploy cellular defenses, and implement real-world medical interventions across 20 tactical waves.
+      </p>
+
+      <div class="keypoints">
+        <h3>Quick Gameplay Instructions</h3>
+        <ul>
+          <li><strong>Pop Pathogens:</strong> Click or tap incoming microbial bubbles to weaken invaders before they reach vital body systems.</li>
+          <li><strong>Protect Vital Organs:</strong> Monitor internal organ health bars and prioritize defenses where infections are most severe.</li>
+          <li><strong>Earn Upgrade Points:</strong> Defeating pathogens yields resources that can be spent on biological defenses and medical tools.</li>
+          <li><strong>Deploy Public Health Tools:</strong> Strategic use of vaccines, antibiotics, antiseptics, and protective masks can turn the tide of an infection.</li>
+        </ul>
+      </div>
+
+      <h2>The Science Behind the Game</h2>
+      <p>
+        Every biological mechanism in ImmunoBlitz reflects real-world principles of human immunology, microbiology, and disease prevention. By visualizing abstract microscopic interactions through active strategy, players develop an intuitive understanding of how the body maintains health under threat.
+      </p>
+
+      <h3>1. Pathogen Diversity</h3>
+      <p>
+        Not all infectious threats behave the same way. ImmunoBlitz introduces players to three major classes of pathogens:
+      </p>
+      <ul>
+        <li><strong>Viruses:</strong> Tiny, non-living infectious agents that require host cells to replicate. In-game viral waves require rapid response and preventative measures like vaccination.</li>
+        <li><strong>Bacteria:</strong> Single-celled microorganisms that proliferate rapidly and release damaging toxins. Bacterial outbreaks respond directly to targeted antibiotic treatments.</li>
+        <li><strong>Fungi:</strong> Complex organisms that often form persistent, slow-spreading infections requiring specialized physical barriers and antiseptics to contain.</li>
+      </ul>
+
+      <h3>2. Physical Barriers & First Line Defenses</h3>
+      <p>
+        Before immune cells engage an invader, the body relies on physical and chemical barriers to keep pathogens at bay. Players can reinforce natural defenses such as the skin, tear enzymes, respiratory mucus, stomach acid, and saliva to slow down incoming threats before they reach deeper organ systems.
+      </p>
+
+      <h3>3. Medical Interventions & Public Health</h3>
+      <p>
+        When natural barriers are breached, modern medicine offers vital support to the body's natural defenders:
+      </p>
+      <ul>
+        <li><strong>Vaccines:</strong> Train the immune system to recognize specific pathogen markers before an outbreak occurs.</li>
+        <li><strong>Antibiotics:</strong> Selectively target and destroy bacterial infections without harming human host cells.</li>
+        <li><strong>Antiseptics & Hygiene:</strong> Neutralize surface-level pathogens before they enter the bloodstream.</li>
+        <li><strong>Face Masks:</strong> Reduce transmission rates of airborne respiratory threats.</li>
+      </ul>
+
+      <h2>Explore Our Educational Articles</h2>
+      <p>
+        Want to dive deeper into the biology that inspired ImmunoBlitz? Read our detailed scientific guides designed for students, teachers, and curious learners:
+      </p>
+
+      <div class="article-links">
+        <div class="article-card">
+          <h4><a href="article-microbes.html">Microbes Explained</a></h4>
+          <p>Discover the differences between viruses, bacteria, and fungi, and how each type interacts with human host cells.</p>
+        </div>
+        <div class="article-card">
+          <h4><a href="article-defenders.html">Cellular Defenders</a></h4>
+          <p>Learn about white blood cells, phagocytes, and antibodies—the body's specialized microscopic defense force.</p>
+        </div>
+        <div class="article-card">
+          <h4><a href="article-defense.html">First Line of Defense</a></h4>
+          <p>Examine how physical barriers like skin, mucus, and chemical enzymes protect against everyday biological threats.</p>
+        </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+      © 2026 BrainStorm Games | 
+      <a href="learn.html">Learn</a> | 
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="about.html">About</a> | 
+      <a href="contact.html">Contact</a> |
+      <a href="terms.html">Terms</a> |
+      <a href="disclaimer.html">Disclaimer</a>
+    </footer>
+
+    <!-- Unity Loader Script -->
     <script>
       var canvas = document.querySelector("#unity-canvas");
 
-      // Shows a temporary message banner/ribbon for a few seconds, or
-      // a permanent error message on top of the canvas if type=='error'.
-      // If type=='warning', a yellow highlight color is used.
-      // Modify or remove this function to customize the visually presented
-      // way that non-critical warnings and error messages are presented to the
-      // user.
       function unityShowBanner(msg, type) {
         var warningBanner = document.querySelector("#unity-warning");
         function updateBannerVisibility() {
@@ -63,47 +289,16 @@
         productName: "ImmunoBlitz",
         productVersion: "1.10",
         showBanner: unityShowBanner,
-        // errorHandler: function(err, url, line) {
-        //    alert("error " + err + " occurred at line " + line);
-        //    // Return 'true' if you handled this error and don't want Unity
-        //    // to process it further, 'false' otherwise.
-        //    return true;
-        // },
       };
 
-      // By default, Unity keeps WebGL canvas render target size matched with
-      // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-      // Set this to false if you want to decouple this synchronization from
-      // happening inside the engine, and you would instead like to size up
-      // the canvas DOM size and WebGL render target sizes yourself.
-      // config.matchWebGLToCanvasSize = false;
-
-      // If you would like all file writes inside Unity Application.persistentDataPath
-      // directory to automatically persist so that the contents are remembered when
-      // the user revisits the site the next time, uncomment the following line:
-      // config.autoSyncPersistentDataPath = true;
-      // This autosyncing is currently not the default behavior to avoid regressing
-      // existing user projects that might rely on the earlier manual
-      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
-      // expected to change.
-
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
-
         var meta = document.createElement('meta');
         meta.name = 'viewport';
         meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         document.querySelector("#unity-container").className = "unity-mobile";
         canvas.className = "unity-mobile";
-
-        // To lower canvas resolution on mobile devices to gain some
-        // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
-
-
       } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         canvas.style.width = "960px";
         canvas.style.height = "600px";
       }
@@ -115,19 +310,17 @@
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
           document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
-              }).then((unityInstance) => {
-                document.querySelector("#unity-loading-bar").style.display = "none";
-                document.querySelector("#unity-fullscreen-button").onclick = () => {
-                  unityInstance.SetFullscreen(1);
-                };
-
-              }).catch((message) => {
-                alert(message);
-              });
-            };
+        }).then((unityInstance) => {
+          document.querySelector("#unity-loading-bar").style.display = "none";
+          document.querySelector("#unity-fullscreen-button").onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
 
       document.body.appendChild(script);
-
     </script>
   </body>
 </html>
