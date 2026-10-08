@@ -3,10 +3,23 @@
   <head>
     <meta name="google-adsense-account" content="ca-pub-7937763552309554">
     <meta charset="utf-8">
-    <title>The First Line of Defense: Skin and Mucus in ImmunoBlitz</title>
-    <meta name="description" content="Learn how the human body's first line of defense works in reality and how you can upgrade your skin and mucus defenses in the ImmunoBlitz game.">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meet the Defenders: Macrophages, Neutrophils & Lymphocytes | ImmunoBlitz</title>
+    <meta name="description" content="Learn how macrophages, neutrophils, B cells, T cells, antibodies and immune memory work together to defend the human body, and how ImmunoBlitz simplifies these processes for learning.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.brainstorm-games.com/article-defenders.html">
+
+    <meta property="og:title" content="Meet the Defenders: Macrophages, Neutrophils & Lymphocytes">
+    <meta property="og:description" content="Explore the immune cells that detect, attack and remember pathogens, with clear links between real immunology and ImmunoBlitz.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.brainstorm-games.com/article-defenders.html">
+
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         margin: 0;
         font-family: Arial, sans-serif;
@@ -14,6 +27,7 @@
         color: #333;
         line-height: 1.8;
       }
+
       nav {
         text-align: center;
         padding: 15px;
@@ -21,18 +35,21 @@
         font-size: 16px;
         border-bottom: 1px solid #eaeaea;
       }
+
       nav a {
         margin: 0 10px;
         text-decoration: none;
         color: #333;
         font-weight: bold;
       }
+
       nav a:hover {
         text-decoration: underline;
         color: #0056b3;
       }
+
       .content {
-        max-width: 800px;
+        max-width: 860px;
         margin: 40px auto;
         padding: 40px;
         text-align: left;
@@ -40,40 +57,136 @@
         border-radius: 8px;
         box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
       }
+
       .content h1 {
         color: #2c3e50;
         text-align: center;
         margin-bottom: 0.2em;
         font-size: 2.2em;
       }
+
+      .subtitle {
+        text-align: center;
+        color: #666;
+        font-style: italic;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+
+      .byline {
+        text-align: center;
+        color: #777;
+        font-size: 0.95em;
+        margin-bottom: 32px;
+      }
+
       .content h2 {
         color: #2c3e50;
-        margin-top: 1.5em;
+        margin-top: 1.7em;
         border-bottom: 2px solid #f1f8ff;
         padding-bottom: 10px;
         font-size: 1.5em;
       }
+
       .content h3 {
         color: #34495e;
-        margin-top: 1.2em;
+        margin-top: 1.3em;
       }
+
       .content p {
         margin-bottom: 20px;
         font-size: 1.05em;
         color: #444;
       }
-      .gameplay-tip {
+
+      .keypoints,
+      .game-link,
+      .model-note,
+      .sources-box {
+        padding: 18px 22px;
+        margin: 24px 0;
+        border-radius: 6px;
+      }
+
+      .keypoints {
+        background-color: #f1f8ff;
+        border-left: 5px solid #0056b3;
+      }
+
+      .game-link {
         background-color: #eef7ee;
         border-left: 5px solid #28a745;
-        padding: 15px 20px;
-        margin: 20px 0;
-        border-radius: 4px;
-        font-style: italic;
       }
-      .gameplay-tip strong {
-        color: #28a745;
-        font-style: normal;
+
+      .model-note {
+        background-color: #fff8e8;
+        border-left: 5px solid #e2a93b;
       }
+
+      .sources-box {
+        background-color: #f7f7f7;
+        border-left: 5px solid #666;
+      }
+
+      .keypoints h3,
+      .game-link h3,
+      .model-note h3,
+      .sources-box h3 {
+        margin-top: 0;
+        color: #2c3e50;
+      }
+
+      ul {
+        padding-left: 22px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+      }
+
+      .comparison-table th,
+      .comparison-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        vertical-align: top;
+      }
+
+      .comparison-table th {
+        background: #f1f8ff;
+        color: #2c3e50;
+        text-align: left;
+      }
+
+      .related-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 20px;
+      }
+
+      .related-card {
+        border: 1px solid #e4e4e4;
+        background: #fafafa;
+        border-radius: 6px;
+        padding: 15px;
+      }
+
+      .related-card a {
+        color: #0056b3;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .related-card a:hover {
+        text-decoration: underline;
+      }
+
       .cta-box {
         background-color: #f1f8ff;
         border-left: 5px solid #0056b3;
@@ -81,10 +194,12 @@
         margin-top: 40px;
         border-radius: 4px;
       }
+
       .cta-box h3 {
         margin-top: 0;
         color: #0056b3;
       }
+
       .play-button {
         display: inline-block;
         background-color: #0056b3;
@@ -96,11 +211,13 @@
         margin-top: 10px;
         transition: background-color 0.2s ease;
       }
+
       .play-button:hover {
         background-color: #004494;
         text-decoration: none;
         color: #ffffff;
       }
+
       .back-link {
         display: block;
         margin-bottom: 20px;
@@ -108,9 +225,11 @@
         text-decoration: none;
         font-weight: bold;
       }
+
       .back-link:hover {
         text-decoration: underline;
       }
+
       footer {
         text-align: center;
         padding: 20px;
@@ -119,13 +238,26 @@
         margin-top: 40px;
         border-top: 1px solid #eaeaea;
       }
+
       footer a {
         margin: 0 8px;
         text-decoration: none;
         color: #333;
       }
+
       footer a:hover {
         text-decoration: underline;
+      }
+
+      @media (max-width: 700px) {
+        .content {
+          margin: 15px;
+          padding: 22px;
+        }
+
+        .comparison-table {
+          font-size: 0.92em;
+        }
       }
     </style>
 
@@ -136,9 +268,29 @@
       gtag('js', new Date());
       gtag('config', 'G-KHF1C41RJF');
     </script>
-    
+
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7937763552309554" crossorigin="anonymous"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Meet the Defenders: Macrophages, Neutrophils and Lymphocytes",
+      "description": "An educational guide to macrophages, neutrophils, B cells, T cells, antibodies and immune memory, with connections to ImmunoBlitz.",
+      "dateModified": "2026-10-08",
+      "author": {
+        "@type": "Person",
+        "name": "Jacob Azzopardi"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "BrainStorm Games"
+      },
+      "mainEntityOfPage": "https://www.brainstorm-games.com/article-defenders.html"
+    }
+    </script>
   </head>
+
   <body>
     <nav>
       <a href="index.html">Home</a> |
@@ -150,61 +302,330 @@
       <a href="disclaimer.html">Disclaimer</a>
     </nav>
 
-    <div class="content">
+    <main class="content">
       <a href="learn.html" class="back-link">← Back to Learning Hub</a>
-      
-      <h1>The Body's First Line of Defense: Skin and Mucus</h1>
-      <p style="text-align: center; color: #777; font-style: italic;">How your natural barriers act as an impenetrable fortress—and how to upgrade them in ImmunoBlitz.</p>
 
-      <p>When we think of the immune system, we usually picture microscopic battles between white blood cells and invading viruses. However, long before a pathogen ever meets a macrophage or a T-cell, it has to get past the body's security perimeter. In biology, this perimeter is known as the <strong>innate immune system's first line of defense</strong>.</p>
-      
-      <p>This biological fortress is made up of physical, chemical, and biological barriers. Their sole job is to keep the outside world out. Let us take a closer look at these highly evolved shields and how mastering them is the key to surviving the early waves of ImmunoBlitz.</p>
+      <article>
+        <h1>Meet the Defenders: Macrophages, Neutrophils and Lymphocytes</h1>
+        <p class="subtitle">What happens after pathogens get past the body's first barriers?</p>
+        <p class="byline"><strong>Written by Jacob Azzopardi</strong> · Science educator and creator of ImmunoBlitz · Last reviewed 8 October 2026</p>
 
-      <h2>1. The Impenetrable Wall: Your Skin</h2>
-      <p>Your skin is not just a wrapper for your organs; it is the largest organ in your body and your primary physical barrier against infection.</p>
-      
-      
-      
-      <p>The outermost layer of the skin, called the epidermis, is made of tough, tightly packed cells that are essentially waterproof. Because the very top layer consists of dead skin cells that are constantly shedding, any bacteria or fungi that manage to attach themselves to you are quickly cast off into the environment. Furthermore, glands in your skin produce sweat and sebum (oil), making the surface slightly acidic and highly hostile to most harmful microbes.</p>
+        <p>
+          Skin, mucus, tears and stomach acid can stop many microorganisms before they ever reach vulnerable tissues. But no
+          barrier is perfect. When pathogens cross those first lines of defence, the body needs a second level of protection:
+          <strong>immune cells</strong> that can detect danger, attack invaders, communicate with one another and, in some cases,
+          remember a threat for the future.
+        </p>
 
-      <div class="gameplay-tip">
-        <strong>ImmunoBlitz Strategy:</strong> In the game, the skin acts as your primary buffer. Upgrading your "Skin Barrier" with Immunopoints increases the amount of base damage you can absorb before your internal, more vital organs start taking hits. It is a critical early-game investment to survive the initial bacterial waves.
-      </div>
+        <p>
+          These cells do not all perform the same job. Some belong mainly to the <strong>innate immune system</strong>, which
+          reacts quickly and recognises broad signs of danger. Others belong to the <strong>adaptive immune system</strong>,
+          which can produce highly specific responses against particular antigens. The two systems cooperate rather than acting
+          as completely separate armies.
+        </p>
 
-      <h2>2. The Sticky Traps: Mucus and Cilia</h2>
-      <p>What about the areas where your body has to be open to the outside world, like your nose, mouth, and lungs? You cannot cover these with thick skin because you need to breathe and eat. This is where the respiratory and gastrointestinal tracts use a different strategy: <strong>mucus</strong>.</p>
-      
-      <p>Mucus is a thick, slippery fluid that coats the linings of your internal pathways. When you breathe in dust, pollen, or airborne viruses, they get stuck in this biological glue. Inside your airways, millions of microscopic, hair-like structures called <strong>cilia</strong> beat back and forth, constantly pushing the contaminated mucus up and out of your lungs toward your throat to be swallowed or coughed out.</p>
+        <div class="keypoints">
+          <h3>Key idea</h3>
+          <p>
+            A useful way to picture immunity is as a coordinated team: some cells arrive quickly, some engulf invaders, some
+            send signals, some make antibodies, some destroy infected cells, and some remain behind as memory cells.
+          </p>
+        </div>
 
-      <div class="gameplay-tip">
-        <strong>ImmunoBlitz Strategy:</strong> When you face fast-moving viral waves, popping bubbles quickly isn't always enough. Investing your points into "Mucus Production" actually slows down the movement speed of incoming yellow microbes on the screen, giving you more time to target them before they breach your organ defenses.
-      </div>
+        <h2>1. Innate and Adaptive Immunity</h2>
 
-      <h2>3. The Chemical Baths: Tears, Saliva, and Stomach Acid</h2>
-      <p>If a pathogen avoids the skin and gets past the mucus, it still has to survive a gauntlet of harsh chemicals.</p>
-      
-      <h3>Lysozymes and Stomach Acid</h3>
-      <p>Every time you blink or swallow, you are washing your eyes and mouth with a special enzyme called <strong>lysozyme</strong>, which acts like biological scissors slicing through bacterial cell walls. If a pathogen makes it to the stomach, it drops into a pool of hydrochloric acid (pH 1.5 to 3.5), instantly neutralizing the vast majority of threats.</p>
+        <p>
+          The <strong>innate immune system</strong> is the body's rapid-response defence. It includes barriers as well as cells
+          such as macrophages and neutrophils. These cells can recognise common features associated with microbes or damaged
+          tissue and begin responding quickly. Innate responses are essential because they can act before the body has built a
+          highly specific response to a particular pathogen.
+        </p>
 
-      <div class="gameplay-tip">
-        <strong>ImmunoBlitz Strategy:</strong> Activating the "Enzyme Wash" or "Acid Flush" power-ups in the game simulates this chemical defense. Using these abilities allows you to instantly clear out low-level threats on the board, saving your clicking power for the tougher boss microbes!
-      </div>
+        <p>
+          The <strong>adaptive immune system</strong> is more specialised. Its major cellular players are lymphocytes, especially
+          B cells and T cells. Adaptive responses take time to develop during a first encounter, but they can target particular
+          antigens with much greater specificity. They can also create <strong>immunological memory</strong>, which helps the
+          body respond more effectively when it encounters the same or a closely related threat again.
+        </p>
 
-      <div class="cta-box">
-        <h3>Put Your Defenses to the Test!</h3>
-        <p>Now that you know how the body's physical barriers work, it's time to take control of them. Build your skin defenses, maximize your mucus production, and keep the pathogens out!</p>
-        <a href="index.html" class="play-button">Play ImmunoBlitz Now</a>
-      </div>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Innate immunity</th>
+              <th>Adaptive immunity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Speed</td>
+              <td>Acts rapidly after a threat is detected.</td>
+              <td>Usually takes longer to develop during a first encounter.</td>
+            </tr>
+            <tr>
+              <td>Recognition</td>
+              <td>Recognises broad patterns associated with danger or infection.</td>
+              <td>Recognises specific antigens using specialised lymphocytes.</td>
+            </tr>
+            <tr>
+              <td>Examples</td>
+              <td>Macrophages, neutrophils and other innate immune cells.</td>
+              <td>B lymphocytes, T lymphocytes, antibodies and memory cells.</td>
+            </tr>
+            <tr>
+              <td>Memory</td>
+              <td>Classically described as non-specific and without the same long-term antigen-specific memory as adaptive immunity.</td>
+              <td>Can form long-lasting antigen-specific memory after infection or vaccination.</td>
+            </tr>
+          </tbody>
+        </table>
 
-    </div>
+        <h2>2. Macrophages: Patrol, Detect and Engulf</h2>
+
+        <p>
+          <strong>Macrophages</strong> are large immune cells found in many tissues. Their name comes from Greek words meaning
+          "big eaters", which is a useful clue to one of their most recognisable abilities: <strong>phagocytosis</strong>.
+          During phagocytosis, a macrophage surrounds material such as a microbe, pulls it inside the cell and breaks it down.
+        </p>
+
+        <p>
+          Macrophages do more than simply consume pathogens. They also remove dead or damaged cells and release signalling
+          molecules that influence inflammation and recruit other immune cells. In this sense, macrophages are both frontline
+          defenders and coordinators. They help connect the immediate innate response with later immune activity.
+        </p>
+
+        <p>
+          Some macrophages can also process pieces of a pathogen and present those pieces to T cells. This process helps the
+          adaptive immune system identify what it should respond to. The transition from a broad early response to a more
+          targeted adaptive response is therefore not a handover from one isolated system to another; it is the result of
+          communication between immune cells.
+        </p>
+
+        <h2>3. Neutrophils: Fast Reinforcements</h2>
+
+        <p>
+          <strong>Neutrophils</strong> are another important part of innate immunity. They are produced in large numbers and can
+          move from the blood into infected or damaged tissue when chemical signals indicate that help is needed. They are often
+          among the earliest immune cells to arrive at sites of acute infection.
+        </p>
+
+        <p>
+          Like macrophages, neutrophils can engulf and destroy microbes. They also contain antimicrobial substances that help
+          kill pathogens. Neutrophils are powerful but relatively short-lived compared with many other immune cells. Their role
+          is therefore particularly suited to rapid defence: arrive quickly, attack aggressively and help contain a threat while
+          the wider immune response develops.
+        </p>
+
+        <p>
+          The accumulation of immune cells, fluid and cellular debris at an infection site contributes to visible signs of
+          inflammation. This is one reason redness, swelling, heat and tenderness can accompany infection or injury: the body is
+          changing local blood flow and recruiting defensive resources to the affected area.
+        </p>
+
+        <h2>4. Lymphocytes: The Specialists</h2>
+
+        <p>
+          <strong>Lymphocytes</strong> are white blood cells that include B cells and T cells. They are central to adaptive
+          immunity because individual lymphocytes carry receptors capable of recognising particular molecular targets. When the
+          right lymphocyte encounters its matching antigen in the correct context, that cell can become activated and multiply,
+          creating a larger population directed toward the same threat.
+        </p>
+
+        <p>
+          This specificity is one of the great strengths of adaptive immunity. Instead of responding only to broad signs that
+          "something is wrong", lymphocytes can focus the response on features associated with a particular pathogen.
+        </p>
+
+        <h3>B Cells: Antibody Producers and Memory Cells</h3>
+
+        <p>
+          <strong>B lymphocytes</strong>, or B cells, are responsible for antibody-mediated immune responses. After activation,
+          some B cells develop into plasma cells that produce large quantities of <strong>antibodies</strong>. Antibodies are
+          proteins whose structures allow them to bind particular antigens.
+        </p>
+
+        <p>
+          Antibody binding can help in several ways. It can block a virus or toxin from attaching to a host cell, mark a target
+          so that other immune cells can recognise it more easily, or contribute to other processes that help remove the threat.
+          Antibodies are therefore not tiny weapons that "eat" microbes themselves; they are highly specific binding molecules
+          that help neutralise targets and organise immune defence.
+        </p>
+
+        <p>
+          Some activated B cells become <strong>memory B cells</strong>. These long-lived cells can respond more rapidly if their
+          matching antigen appears again later. This is one of the biological foundations of immune memory.
+        </p>
+
+        <h3>T Cells: Coordinators and Killers</h3>
+
+        <p>
+          <strong>T lymphocytes</strong>, or T cells, perform several roles. Helper T cells support and coordinate immune
+          responses by sending signals that influence other immune cells. Cytotoxic T cells can recognise and destroy certain
+          infected or abnormal host cells.
+        </p>
+
+        <p>
+          This is particularly important for pathogens such as viruses, which reproduce inside host cells. An antibody may help
+          stop a virus before it enters a cell, but once a host cell has become infected, the immune system may need to recognise
+          and remove that infected cell to limit further spread.
+        </p>
+
+        <p>
+          Some T cells also persist as <strong>memory T cells</strong>. Together with memory B cells, they help the adaptive
+          immune system respond more efficiently after previous exposure.
+        </p>
+
+        <h2>5. Antibodies: Specific Recognition</h2>
+
+        <p>
+          Antibodies are often drawn as Y-shaped molecules, and each antibody has regions capable of binding a particular target.
+          The target recognised by an antibody is called an <strong>antigen</strong>. Because antibody-antigen binding is highly
+          specific, antibodies that recognise one pathogen may not recognise a completely different pathogen.
+        </p>
+
+        <p>
+          This specificity explains why immunity is not simply a single meter that rises for every disease. The adaptive immune
+          system builds collections of cells and antibodies directed toward particular antigens. A person can therefore have
+          strong immunity to one infection while remaining susceptible to another.
+        </p>
+
+        <h2>6. Immune Memory: Why the Second Encounter Can Be Different</h2>
+
+        <p>
+          During a first adaptive immune response, suitable B and T cells must be activated and expanded. After that response,
+          some cells remain as memory cells. If the same antigen appears later, these memory populations can respond more quickly
+          and effectively than they did during the first encounter.
+        </p>
+
+        <p>
+          <strong>Vaccination</strong> makes use of this principle. A vaccine exposes the immune system to antigens, or
+          instructions for producing an antigen, in a controlled way so that the body can develop an immune response and memory
+          without having to experience the full risks of the disease that the vaccine is designed to prevent.
+        </p>
+
+        <p>
+          Immune memory is not identical for every pathogen or every person, and protection can change over time. Nevertheless,
+          the ability of B and T lymphocytes to form memory is one of the defining features of adaptive immunity.
+        </p>
+
+        <h2>7. How the Defenders Work Together</h2>
+
+        <p>
+          A real immune response is a network rather than a sequence of completely separate stages. Still, it can be useful to
+          imagine a simplified chain of events. A pathogen first encounters physical and chemical barriers. If it crosses them,
+          tissue cells and innate immune cells detect signs of trouble. Macrophages and neutrophils attack and help create an
+          inflammatory response. Information about the threat can then contribute to activation of specific B and T lymphocytes.
+          Antibodies and specialised T-cell responses help target the infection, while some lymphocytes remain behind as memory
+          cells.
+        </p>
+
+        <div class="keypoints">
+          <h3>A simplified defence sequence</h3>
+          <ul>
+            <li><strong>Barrier:</strong> skin, mucus and chemicals try to prevent entry.</li>
+            <li><strong>Detection:</strong> innate immune cells recognise danger and respond rapidly.</li>
+            <li><strong>Containment:</strong> macrophages, neutrophils and other innate mechanisms attack the threat.</li>
+            <li><strong>Specific response:</strong> B and T lymphocytes target particular antigens.</li>
+            <li><strong>Antibodies and cellular action:</strong> the adaptive response helps neutralise pathogens and remove infected cells.</li>
+            <li><strong>Memory:</strong> some B and T cells remain ready for future encounters.</li>
+          </ul>
+        </div>
+
+        <h2>8. How This Connects to ImmunoBlitz</h2>
+
+        <div class="game-link">
+          <h3>From real biology to game strategy</h3>
+          <p>
+            ImmunoBlitz turns the idea of layered defence into an interactive system. The player is asked to stop pathogens,
+            protect organs and improve the body's defences while the pressure of infection increases. The real immune system
+            contains far more cell types, molecules and feedback mechanisms than a game can display, but the central idea is the
+            same: successful defence depends on several systems working together rather than on one universal response.
+          </p>
+        </div>
+
+        <p>
+          When you play, think of the visible threats and upgrades as a model. The clicks, points, waves and health bars are game
+          mechanics, while the underlying concepts—barriers, pathogens, immune responses, prevention and targeted interventions—
+          are the scientific ideas the game is designed to make easier to discuss.
+        </p>
+
+        <p>
+          This distinction matters. A macrophage does not wait for a player to purchase it, a T cell does not appear instantly
+          because a button was pressed, and the body does not organise an infection into twenty neat waves. Those simplifications
+          make strategy possible, but they should not be confused with literal physiology.
+        </p>
+
+        <div class="model-note">
+          <h3>Remember: ImmunoBlitz is a model, not a medical simulation</h3>
+          <p>
+            The game simplifies real immune processes for educational purposes. It is intended to support learning and discussion,
+            not to provide medical advice, diagnosis or a complete simulation of human immunity.
+          </p>
+        </div>
+
+        <h2>9. Quick Check: Can You Match the Defender to the Job?</h2>
+
+        <ul>
+          <li><strong>Macrophage:</strong> engulfs material, removes debris and helps coordinate immune activity.</li>
+          <li><strong>Neutrophil:</strong> rapidly moves to sites of infection and attacks microbes as part of innate defence.</li>
+          <li><strong>B cell:</strong> can develop into an antibody-producing plasma cell and can form memory B cells.</li>
+          <li><strong>Helper T cell:</strong> helps coordinate adaptive immune responses.</li>
+          <li><strong>Cytotoxic T cell:</strong> can destroy certain infected or abnormal host cells.</li>
+          <li><strong>Antibody:</strong> specifically binds an antigen and can help neutralise or mark a threat.</li>
+          <li><strong>Memory B and T cells:</strong> support a faster or more effective response to a future encounter with a recognised antigen.</li>
+        </ul>
+
+        <h2>Sources and Further Reading</h2>
+
+        <div class="sources-box">
+          <h3>Authoritative references used for this guide</h3>
+          <ul>
+            <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK279396/" target="_blank" rel="noopener noreferrer">NCBI Bookshelf — The innate and adaptive immune systems</a></li>
+            <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK21070/" target="_blank" rel="noopener noreferrer">NCBI Bookshelf — The Adaptive Immune System</a></li>
+            <li><a href="https://www.cdc.gov/vaccines/basics/immunity-types.html" target="_blank" rel="noopener noreferrer">CDC — Immunity Types</a></li>
+            <li><a href="https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-1-principles-of-vaccination.html" target="_blank" rel="noopener noreferrer">CDC Pink Book — Principles of Vaccination</a></li>
+          </ul>
+          <p>
+            These references provide deeper explanations of innate immunity, adaptive immunity, antibodies, B and T lymphocytes,
+            vaccination and immune memory.
+          </p>
+        </div>
+
+        <h2>Related ImmunoBlitz Reading</h2>
+
+        <div class="related-links">
+          <div class="related-card">
+            <a href="article-defense.html">First Line of Defense</a>
+            <p>See what pathogens must overcome before these cellular defenders are needed.</p>
+          </div>
+          <div class="related-card">
+            <a href="article-microbes.html">Viruses vs. Bacteria</a>
+            <p>Compare two major types of infectious threat and why their biology matters.</p>
+          </div>
+          <div class="related-card">
+            <a href="learn.html">Learning Hub</a>
+            <p>Return to the full collection of ImmunoBlitz educational resources.</p>
+          </div>
+        </div>
+
+        <div class="cta-box">
+          <h3>See the Defence System in Action</h3>
+          <p>
+            Return to ImmunoBlitz and think about the layers of defence while you play: barriers first, cellular responses next,
+            and specialised interventions when the situation demands them.
+          </p>
+          <a href="index.html" class="play-button">Play ImmunoBlitz Now</a>
+        </div>
+      </article>
+    </main>
 
     <footer>
-      © 2026 BrainStorm Games | 
-      <a href="learn.html">Learn</a> | 
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="about.html">About</a> | 
-      <a href="contact.html">Contact</a> | 
-      <a href="terms.html">Terms</a> | 
+      © 2026 BrainStorm Games |
+      <a href="learn.html">Learn</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="terms.html">Terms</a> |
       <a href="disclaimer.html">Disclaimer</a>
     </footer>
   </body>

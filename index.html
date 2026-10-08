@@ -1,40 +1,66 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    <meta name="google-adsense-account" content="ca-pub-7937763552309554">
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImmunoBlitz | Interactive Science Strategy Game | BrainStorm Games</title>
+
+    <title>ImmunoBlitz | Interactive Immune System Strategy Game | BrainStorm Games</title>
+    <meta name="description" content="Play ImmunoBlitz, an educational strategy game about the human immune system, pathogens, body defenses, vaccines, antibiotics and public health. Explore the science behind the game and free learning resources for students and teachers.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.brainstorm-games.com/">
+
+    <meta property="og:title" content="ImmunoBlitz | Interactive Immune System Strategy Game">
+    <meta property="og:description" content="Defend the human body, learn how pathogens spread, and explore immune defenses and public-health tools in this interactive educational science game.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.brainstorm-games.com/">
+
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    
+
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
         margin: 0;
         font-family: Arial, sans-serif;
         background-color: #fafafa;
         color: #333;
-        line-height: 1.6;
+        line-height: 1.7;
       }
+
       nav {
         text-align: center;
         padding: 15px;
         background-color: #ffffff;
         font-size: 16px;
         border-bottom: 1px solid #eaeaea;
+        position: sticky;
+        top: 0;
+        z-index: 50;
       }
+
       nav a {
         margin: 0 10px;
         text-decoration: none;
         color: #333;
         font-weight: bold;
       }
+
       nav a:hover {
         text-decoration: underline;
         color: #0056b3;
       }
+
       .content {
-        max-width: 1000px;
+        max-width: 1080px;
         margin: 30px auto;
         padding: 30px;
         text-align: left;
@@ -42,26 +68,39 @@
         border-radius: 8px;
         box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
       }
+
       .content h1 {
         color: #2c3e50;
         text-align: center;
         margin-bottom: 0.2em;
+        font-size: 2.35em;
       }
+
       .subtitle {
         text-align: center;
         color: #666;
         margin-top: 0;
-        margin-bottom: 25px;
-        font-size: 1.1em;
+        margin-bottom: 18px;
+        font-size: 1.15em;
       }
+
+      .intro {
+        max-width: 860px;
+        margin: 0 auto 25px auto;
+        text-align: center;
+        font-size: 1.05em;
+        color: #444;
+      }
+
       .game-section {
         display: flex;
         justify-content: center;
         margin: 25px 0 35px 0;
-	width: 100%;
+        width: 100%;
       }
-	/* OVERRIDE UNITY ABSOLUTE POSITIONING */
-      #unity-container, 
+
+      /* OVERRIDE UNITY ABSOLUTE POSITIONING */
+      #unity-container,
       #unity-container.unity-desktop {
         position: relative !important;
         left: auto !important;
@@ -69,40 +108,82 @@
         transform: none !important;
         margin: 0 auto !important;
       }
+
       .content h2 {
         color: #2c3e50;
-        margin-top: 1.8em;
+        margin-top: 2em;
         border-bottom: 2px solid #f1f8ff;
         padding-bottom: 10px;
-        font-size: 1.4em;
+        font-size: 1.55em;
       }
+
       .content h3 {
         color: #34495e;
-        margin-top: 1.2em;
+        margin-top: 1.4em;
       }
-      .keypoints {
+
+      .keypoints,
+      .info-box,
+      .teacher-box {
         background-color: #f1f8ff;
         padding: 20px 25px;
         border-radius: 8px;
         margin: 25px 0;
       }
-      .keypoints h3 {
+
+      .teacher-box {
+        background-color: #f7fbf5;
+        border-left: 4px solid #5f9f57;
+      }
+
+      .info-box {
+        background-color: #fffaf0;
+        border-left: 4px solid #e2a93b;
+      }
+
+      .keypoints h3,
+      .info-box h3,
+      .teacher-box h3 {
         color: #2c3e50;
         margin-top: 0;
         margin-bottom: 12px;
       }
+
       ul {
-        padding-left: 20px;
+        padding-left: 22px;
       }
+
       li {
         margin-bottom: 8px;
       }
+
+      .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+        margin: 24px 0;
+      }
+
+      .feature-card {
+        border: 1px solid #e7e7e7;
+        border-radius: 8px;
+        padding: 18px;
+        background: #fcfcfc;
+      }
+
+      .feature-card h3 {
+        margin-top: 0;
+        font-size: 1.05em;
+        color: #2c3e50;
+      }
+
       .article-links {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
         margin-top: 20px;
       }
+
       .article-card {
         border: 1px solid #eaeaea;
         padding: 20px;
@@ -110,18 +191,57 @@
         background-color: #fafafa;
         transition: transform 0.2s, box-shadow 0.2s;
       }
+
       .article-card:hover {
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       }
+
       .article-card h4 {
         margin-top: 0;
         color: #0056b3;
       }
+
       .article-card a {
         text-decoration: none;
         color: inherit;
       }
+
+      .article-card a:hover {
+        text-decoration: underline;
+      }
+
+      .cta {
+        text-align: center;
+        padding: 24px;
+        background: #f6f9fc;
+        border-radius: 8px;
+        margin-top: 30px;
+      }
+
+      .cta a {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 10px 18px;
+        border-radius: 6px;
+        background: #0056b3;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .cta a:hover {
+        background: #003f84;
+      }
+
+      .faq-item {
+        margin-bottom: 20px;
+      }
+
+      .faq-item h3 {
+        margin-bottom: 6px;
+      }
+
       footer {
         text-align: center;
         padding: 20px;
@@ -130,13 +250,32 @@
         margin-top: 40px;
         border-top: 1px solid #eaeaea;
       }
+
       footer a {
         margin: 0 8px;
         text-decoration: none;
         color: #333;
       }
+
       footer a:hover {
         text-decoration: underline;
+      }
+
+      @media (max-width: 700px) {
+        .content {
+          margin: 15px;
+          padding: 20px;
+        }
+
+        nav {
+          position: static;
+          line-height: 2;
+        }
+
+        nav a {
+          display: inline-block;
+          margin: 0 6px;
+        }
       }
     </style>
 
@@ -146,10 +285,28 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-KHF1C41RJF');
     </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "ImmunoBlitz",
+      "url": "https://www.brainstorm-games.com/",
+      "description": "An educational strategy game about the human immune system, pathogens, body defenses, medical interventions and public health.",
+      "genre": ["Educational", "Strategy", "Science"],
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "publisher": {
+        "@type": "Organization",
+        "name": "BrainStorm Games",
+        "url": "https://www.brainstorm-games.com/"
+      }
+    }
+    </script>
   </head>
+
   <body>
     <!-- Top Navigation -->
     <nav>
@@ -162,9 +319,16 @@
       <a href="disclaimer.html">Disclaimer</a>
     </nav>
 
-    <div class="content">
+    <main class="content">
       <h1>ImmunoBlitz</h1>
-      <p class="subtitle">An Interactive Immunology & Public Health Strategy Game</p>
+      <p class="subtitle">An Interactive Immunology &amp; Public Health Strategy Game</p>
+
+      <p class="intro">
+        ImmunoBlitz turns the invisible world of infection and immunity into an interactive strategy challenge.
+        Players defend the human body against waves of pathogens, strengthen natural barriers, protect vital organs,
+        and choose medical and public-health interventions at the right moment. The game is designed to make core
+        ideas from immunology, microbiology and disease prevention easier to visualise, discuss and remember.
+      </p>
 
       <!-- Unity Game Player Area -->
       <div class="game-section">
@@ -185,80 +349,369 @@
         </div>
       </div>
 
-      <!-- Comprehensive Educational Content -->
-      <h2>Command Your Immune Defenses</h2>
-      <p>
-        <strong>ImmunoBlitz</strong> is an arcade-style educational strategy game where players take charge of defending the human body against invading pathogens. From bacterial strains and viral outbreaks to persistent fungal infections, players must act swiftly to manage internal organ health, deploy cellular defenses, and implement real-world medical interventions across 20 tactical waves.
-      </p>
+      <section>
+        <h2>What Is ImmunoBlitz?</h2>
+        <p>
+          <strong>ImmunoBlitz</strong> is an arcade-style educational strategy game in which the player takes responsibility
+          for keeping a virtual human body alive while infections develop and spread. Instead of presenting the immune system
+          as a list of definitions, the game asks the player to make decisions under pressure. Incoming pathogens must be
+          controlled, organs must be monitored, defensive upgrades must be chosen, and limited resources must be used carefully.
+        </p>
+        <p>
+          The aim is not to replace a science lesson or textbook. Instead, ImmunoBlitz gives learners a visual and interactive
+          way to connect important ideas: different pathogens behave differently, the body has several layers of defence,
+          medical treatments have specific purposes, and prevention can be just as important as treatment. The game therefore
+          combines strategy with science so that learning is tied to actions and consequences rather than memorisation alone.
+        </p>
+        <p>
+          Across 20 waves, the player must respond to changing threats while keeping vital organs functioning. The experience
+          encourages players to think about cause and effect: what happens when a barrier fails, why some interventions work
+          against certain pathogens but not others, and why preventing infection early can reduce the pressure placed on deeper
+          immune defences.
+        </p>
+      </section>
 
-      <div class="keypoints">
-        <h3>Quick Gameplay Instructions</h3>
+      <section>
+        <h2>How to Play</h2>
+        <p>
+          ImmunoBlitz is designed to be easy to understand at first but increasingly strategic as the game progresses. The
+          player begins with a healthy body and must react as pathogens start appearing. Each wave introduces pressure, and
+          successful defence requires attention to both the immediate threat and the wider state of the body.
+        </p>
+
+        <div class="keypoints">
+          <h3>Quick Gameplay Instructions</h3>
+          <ul>
+            <li><strong>Pop Pathogens:</strong> Click or tap incoming microbial bubbles to weaken invaders before they reach vital body systems.</li>
+            <li><strong>Protect Vital Organs:</strong> Monitor organ health and respond quickly when infection begins to cause damage.</li>
+            <li><strong>Earn Upgrade Points:</strong> Defeating pathogens provides resources that can be spent on stronger biological defences and useful interventions.</li>
+            <li><strong>Strengthen Natural Barriers:</strong> Improve first-line defences such as skin, mucus, tears, saliva and stomach acid.</li>
+            <li><strong>Use the Right Intervention:</strong> Vaccines, antibiotics, antiseptics, masks and other tools are most useful when matched to the correct situation.</li>
+            <li><strong>Survive the Waves:</strong> The challenge becomes more demanding as new threats appear and the player must balance speed, priorities and limited resources.</li>
+          </ul>
+        </div>
+
+        <p>
+          One of the main ideas behind the game is that there is rarely a single button that solves every problem. Players are
+          encouraged to consider the type of pathogen, the location of the threat, the condition of the organs and the upgrades
+          they have already purchased. This reflects an important scientific principle: biological defence is a system made up
+          of many interacting parts rather than one universal response.
+        </p>
+      </section>
+
+      <section>
+        <h2>What Players Can Learn</h2>
+        <p>
+          ImmunoBlitz focuses on ideas that often appear in school science when students begin studying cells, microorganisms,
+          disease, immunity and public health. The game gives these topics a shared context so that they can be explored as part
+          of one connected system.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Pathogens Are Different</h3>
+            <p>Viruses, bacteria and fungi are not interchangeable. They differ in structure, reproduction and the ways they can be controlled.</p>
+          </div>
+          <div class="feature-card">
+            <h3>The Body Uses Layers of Defence</h3>
+            <p>Physical and chemical barriers act first, while more specialised cellular and immune responses become important when threats get past those barriers.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Prevention Matters</h3>
+            <p>Vaccination, hygiene, barriers and other preventive measures can reduce the chance that a threat becomes a serious infection.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Treatments Have Specific Uses</h3>
+            <p>Antibiotics target bacteria rather than viruses, while antiseptics, masks and other interventions work in different ways and at different stages.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Health Depends on Systems</h3>
+            <p>Keeping one part of the body safe is not enough. Organ health, barriers, immune defences and interventions all influence the final outcome.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Decisions Have Consequences</h3>
+            <p>Using resources too early, too late or on the wrong threat can make later waves more difficult, encouraging strategic thinking alongside science learning.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>The Science Behind ImmunoBlitz</h2>
+        <p>
+          The immune system is not a single organ or a single type of cell. It is a coordinated network of physical barriers,
+          chemical protections, specialised cells, tissues and signalling processes. ImmunoBlitz simplifies this complexity so
+          that players can interact with key ideas while still recognising that real immunity involves many processes working
+          together.
+        </p>
+
+        <h3>1. Pathogen Diversity</h3>
+        <p>
+          Infectious diseases can be caused by very different biological agents. ImmunoBlitz introduces three major groups so
+          that players learn early that the word <em>pathogen</em> describes a role rather than one particular type of organism.
+        </p>
         <ul>
-          <li><strong>Pop Pathogens:</strong> Click or tap incoming microbial bubbles to weaken invaders before they reach vital body systems.</li>
-          <li><strong>Protect Vital Organs:</strong> Monitor internal organ health bars and prioritize defenses where infections are most severe.</li>
-          <li><strong>Earn Upgrade Points:</strong> Defeating pathogens yields resources that can be spent on biological defenses and medical tools.</li>
-          <li><strong>Deploy Public Health Tools:</strong> Strategic use of vaccines, antibiotics, antiseptics, and protective masks can turn the tide of an infection.</li>
+          <li><strong>Viruses:</strong> Infectious particles that depend on host cells to make more copies of themselves. Viral infections cannot be treated with ordinary antibacterial antibiotics.</li>
+          <li><strong>Bacteria:</strong> Single-celled organisms. Many bacteria are harmless or beneficial, but some species can cause disease when they enter tissues, multiply or produce harmful substances.</li>
+          <li><strong>Fungi:</strong> Organisms that include yeasts and moulds. Some fungi can cause infections, particularly on body surfaces or when normal barriers and defences are weakened.</li>
         </ul>
-      </div>
+        <p>
+          In the game, these categories help players practise matching threats with suitable responses. The representation is
+          simplified for gameplay, but the underlying lesson is important: identifying the type of threat affects which
+          preventive or medical response makes sense.
+        </p>
 
-      <h2>The Science Behind the Game</h2>
-      <p>
-        Every biological mechanism in ImmunoBlitz reflects real-world principles of human immunology, microbiology, and disease prevention. By visualizing abstract microscopic interactions through active strategy, players develop an intuitive understanding of how the body maintains health under threat.
-      </p>
+        <h3>2. Physical and Chemical Barriers</h3>
+        <p>
+          Before specialised immune cells become involved, the body already has several ways of making infection more difficult.
+          Skin forms a physical boundary. Mucus can trap particles in the respiratory system. Tears and saliva help wash exposed
+          surfaces, while enzymes and acidic conditions can reduce the survival of some microorganisms.
+        </p>
+        <p>
+          ImmunoBlitz turns these protective mechanisms into upgradeable defences. That makes an important point visible to the
+          player: immunity begins before an infection reaches the bloodstream or internal organs. A strong first line of defence
+          can reduce the number of pathogens that deeper immune responses need to handle.
+        </p>
 
-      <h3>1. Pathogen Diversity</h3>
-      <p>
-        Not all infectious threats behave the same way. ImmunoBlitz introduces players to three major classes of pathogens:
-      </p>
-      <ul>
-        <li><strong>Viruses:</strong> Tiny, non-living infectious agents that require host cells to replicate. In-game viral waves require rapid response and preventative measures like vaccination.</li>
-        <li><strong>Bacteria:</strong> Single-celled microorganisms that proliferate rapidly and release damaging toxins. Bacterial outbreaks respond directly to targeted antibiotic treatments.</li>
-        <li><strong>Fungi:</strong> Complex organisms that often form persistent, slow-spreading infections requiring specialized physical barriers and antiseptics to contain.</li>
-      </ul>
+        <h3>3. Cellular Defenders and Immune Responses</h3>
+        <p>
+          When pathogens cross the body's outer barriers, immune cells become increasingly important. Different white blood cells
+          have different jobs. Some engulf and destroy foreign material, some coordinate responses, and some contribute to highly
+          specific immune reactions. Antibodies can recognise particular targets, while immune memory allows the body to respond
+          more effectively to threats it has encountered before.
+        </p>
+        <p>
+          These processes are far more complex than any single game can represent. ImmunoBlitz therefore focuses on the broad
+          relationship between invasion, defence and recovery. Players who want more detail can continue into the Learning Hub,
+          where individual immune mechanisms are explained more carefully.
+        </p>
 
-      <h3>2. Physical Barriers & First Line Defenses</h3>
-      <p>
-        Before immune cells engage an invader, the body relies on physical and chemical barriers to keep pathogens at bay. Players can reinforce natural defenses such as the skin, tear enzymes, respiratory mucus, stomach acid, and saliva to slow down incoming threats before they reach deeper organ systems.
-      </p>
+        <h3>4. Medical Interventions and Public Health</h3>
+        <p>
+          Human health does not depend only on natural immunity. Medicine and public-health measures can prevent disease,
+          reduce transmission and support recovery. ImmunoBlitz includes several of these tools so that players can compare
+          their purposes rather than treating them as interchangeable "power-ups".
+        </p>
+        <ul>
+          <li><strong>Vaccines:</strong> Prepare the immune system to recognise a particular threat before a future exposure.</li>
+          <li><strong>Antibiotics:</strong> Medicines used against bacterial infections. They do not treat viral infections.</li>
+          <li><strong>Antiseptics and Hygiene:</strong> Help reduce microorganisms on surfaces such as skin and can lower opportunities for infection.</li>
+          <li><strong>Face Masks:</strong> Can reduce the movement of respiratory droplets and particles, helping to limit some forms of transmission.</li>
+        </ul>
+        <p>
+          In real life, the effectiveness of any intervention depends on the disease, the patient, timing, dosage and many other
+          factors. The game uses simplified rules for educational purposes, so it should be understood as a learning tool rather
+          than medical guidance.
+        </p>
+      </section>
 
-      <h3>3. Medical Interventions & Public Health</h3>
-      <p>
-        When natural barriers are breached, modern medicine offers vital support to the body's natural defenders:
-      </p>
-      <ul>
-        <li><strong>Vaccines:</strong> Train the immune system to recognize specific pathogen markers before an outbreak occurs.</li>
-        <li><strong>Antibiotics:</strong> Selectively target and destroy bacterial infections without harming human host cells.</li>
-        <li><strong>Antiseptics & Hygiene:</strong> Neutralize surface-level pathogens before they enter the bloodstream.</li>
-        <li><strong>Face Masks:</strong> Reduce transmission rates of airborne respiratory threats.</li>
-      </ul>
-
-      <h2>Explore Our Educational Articles</h2>
-      <p>
-        Want to dive deeper into the biology that inspired ImmunoBlitz? Read our detailed scientific guides designed for students, teachers, and curious learners:
-      </p>
-
-      <div class="article-links">
-        <div class="article-card">
-          <h4><a href="article-microbes.html">Microbes Explained</a></h4>
-          <p>Discover the differences between viruses, bacteria, and fungi, and how each type interacts with human host cells.</p>
+      <section>
+        <h2>Real Biology vs. Game Simplification</h2>
+        <div class="info-box">
+          <h3>Why does the game simplify the immune system?</h3>
+          <p>
+            Real immunology contains thousands of interacting molecules, cell types and signalling pathways. Reproducing all of
+            that would make a classroom game confusing rather than useful. ImmunoBlitz therefore selects a limited number of
+            concepts and turns them into clear actions, upgrades and consequences.
+          </p>
         </div>
-        <div class="article-card">
-          <h4><a href="article-defenders.html">Cellular Defenders</a></h4>
-          <p>Learn about white blood cells, phagocytes, and antibodies—the body's specialized microscopic defense force.</p>
+        <p>
+          For example, a real infection does not progress in neat "waves", organs do not have visible health bars, and immune
+          responses cannot be upgraded instantly by spending points. These are game mechanics designed to help players notice
+          relationships between threats and defences. The educational value comes from using those mechanics as a starting point
+          for discussion: Which parts are scientifically accurate? Which parts are simplified? What would happen differently in a
+          real human body?
+        </p>
+        <p>
+          This distinction is important because good science education should not only provide facts; it should also help learners
+          recognise models and their limitations. ImmunoBlitz presents a model of infection and defence that can be explored,
+          questioned and compared with real biology.
+        </p>
+      </section>
+
+      <section>
+        <h2>Who Is ImmunoBlitz For?</h2>
+        <p>
+          ImmunoBlitz is designed for learners who are beginning to explore microorganisms, infection and the human immune system,
+          but it can also be used by teachers and families who want a more interactive way to discuss these topics.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Students</h3>
+            <p>Use the game to revise key vocabulary, practise recognising different pathogens and connect classroom ideas to visible cause-and-effect decisions.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Teachers</h3>
+            <p>Use ImmunoBlitz as a lesson starter, discussion prompt, revision activity or follow-up task when teaching infection, immunity, microorganisms or public health.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Families and Curious Learners</h3>
+            <p>Explore basic immune-system concepts together and use the Learning Hub to continue beyond the game with clearer explanations of the underlying science.</p>
+          </div>
         </div>
-        <div class="article-card">
-          <h4><a href="article-defense.html">First Line of Defense</a></h4>
-          <p>Examine how physical barriers like skin, mucus, and chemical enzymes protect against everyday biological threats.</p>
+      </section>
+
+      <section>
+        <h2>Using ImmunoBlitz in a Science Lesson</h2>
+        <div class="teacher-box">
+          <h3>Simple classroom idea</h3>
+          <p>
+            Ask students to play a short session and record three decisions they made. Afterwards, discuss which decisions were
+            based on real biological principles and which were mainly game strategy. This creates an opportunity to distinguish
+            between scientific knowledge and game mechanics.
+          </p>
         </div>
-      </div>
-    </div>
+        <p>
+          Teachers can also use the game to generate questions before introducing a topic. Why are antibiotics useful against
+          bacteria but not viruses? Why does the body need both physical barriers and immune cells? Why might preventing
+          transmission be more effective than waiting until an infection is severe? These questions can turn gameplay into a
+          starting point for investigation rather than an isolated activity.
+        </p>
+        <p>
+          After playing, students can move into the Learning Hub and read more detailed explanations of the concepts they have
+          just encountered. This makes the website useful even when the game itself is not running and gives learners a path from
+          interaction to more conventional scientific reading.
+        </p>
+      </section>
+
+      <section>
+        <h2>Explore the Learning Hub</h2>
+        <p>
+          ImmunoBlitz introduces scientific ideas through play, while the
+          <a href="learn.html">ImmunoBlitz Learning Hub</a> gives students, teachers and curious learners
+          space to investigate those ideas in greater depth. The guides below cover pathogens, immune
+          defences, vaccination, antimicrobial resistance, disease transmission and the ways the game
+          simplifies real biology.
+        </p>
+
+        <div class="article-links">
+          <div class="article-card">
+            <h4><a href="article-microbes.html">Viruses, Bacteria and Fungi</a></h4>
+            <p>Compare three major groups associated with infectious disease and learn why their different biology affects prevention and treatment.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-transmission.html">How Infectious Diseases Spread</a></h4>
+            <p>Explore contact, respiratory, food, water and vector routes, and see how prevention can interrupt the chain of infection.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-antibiotic-resistance.html">Antibiotics and Antimicrobial Resistance</a></h4>
+            <p>Learn how resistance evolves, why antibiotics do not treat viruses and why responsible antimicrobial use matters.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-defense.html">The Body's First Line of Defense</a></h4>
+            <p>Discover how skin, mucus, cilia, tears, saliva, stomach acid and other barriers help reduce pathogen entry.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-defenders.html">Meet the Cellular Defenders</a></h4>
+            <p>Follow the immune response from macrophages and neutrophils to B cells, T cells, antibodies and immune memory.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-inflammation.html">Inflammation Explained</a></h4>
+            <p>Find out why infected or injured tissues can become red, hot, swollen and sore, and how immune cells are recruited.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-vaccines.html">How Vaccines Build Immune Memory</a></h4>
+            <p>Explore antigens, adaptive immunity, memory cells and how vaccination prepares the immune system before later exposure.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-model.html">How ImmunoBlitz Models the Immune System</a></h4>
+            <p>See what the game's waves, health systems, upgrades and interventions represent—and where the model deliberately simplifies reality.</p>
+          </div>
+
+          <div class="article-card">
+            <h4><a href="article-teachers.html">Teacher's Guide to Using ImmunoBlitz</a></h4>
+            <p>Use gameplay as a starting point for classroom discussion, model evaluation, concept checking and evidence-based science activities.</p>
+          </div>
+        </div>
+
+        <div class="cta">
+          <strong>Explore all ImmunoBlitz learning resources</strong>
+          <p>The Learning Hub organises these guides into a clear pathway from pathogens and transmission to immunity, prevention and scientific modelling.</p>
+          <a href="learn.html">Visit the Learning Hub</a>
+        </div>
+      </section>
+
+      <section>
+        <h2>About BrainStorm Games</h2>
+        <p>
+          BrainStorm Games develops educational digital experiences that use interaction, challenge and play to make complex
+          ideas easier to explore. ImmunoBlitz focuses on the human immune system because many of its most important processes
+          happen at scales that learners cannot directly see. A game can make those relationships visible by representing
+          pathogens, barriers, organs and interventions as parts of one connected system.
+        </p>
+        <p>
+          The goal is not to turn every scientific detail into a game mechanic. Instead, the design aims to create an engaging
+          starting point that encourages learners to ask better questions, connect concepts and continue reading. More information
+          about the project and its educational aims is available on the <a href="about.html">About page</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <h3>Is ImmunoBlitz free to play?</h3>
+          <p>
+            The browser version available on this website can be played directly online. No separate installation is needed to
+            start the web version.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is ImmunoBlitz a medical simulation?</h3>
+          <p>
+            No. ImmunoBlitz is an educational strategy game. It simplifies real biological processes so that they can be explored
+            through gameplay. It should not be used for diagnosis, treatment decisions or medical advice.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does the game include vaccines, antibiotics and masks?</h3>
+          <p>
+            These tools represent different approaches to prevention and treatment. Including them allows players to compare
+            their purposes and understand that different health problems require different responses.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does an antibiotic work against a virus in the game?</h3>
+          <p>
+            The educational message is that antibiotics are designed for bacterial infections rather than viral infections.
+            This distinction is one of the important concepts reinforced by the game and the Learning Hub.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can teachers use ImmunoBlitz in class?</h3>
+          <p>
+            Yes. The game can support discussion and revision around infection, microorganisms, immunity, prevention and public
+            health. Teachers can pair gameplay with questions, reflection tasks or articles from the Learning Hub.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Where can I learn more about the science?</h3>
+          <p>
+            Start with the <a href="learn.html">Learning Hub</a>, which links to explanations of pathogens, physical barriers,
+            cellular defenders and other topics connected to ImmunoBlitz.
+          </p>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-      © 2026 BrainStorm Games | 
-      <a href="learn.html">Learn</a> | 
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="about.html">About</a> | 
+      © 2026 BrainStorm Games |
+      <a href="learn.html">Learn</a> |
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="about.html">About</a> |
       <a href="contact.html">Contact</a> |
       <a href="terms.html">Terms</a> |
       <a href="disclaimer.html">Disclaimer</a>
